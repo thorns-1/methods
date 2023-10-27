@@ -1,0 +1,129 @@
+:root {
+  --sidebar-width: 130px;
+}
+
+body {
+  margin: 0;
+  font-family: MerriweatherSans, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  color: white;
+  background-color: rgb(17, 24, 39);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+a[target="_blank"]::after {
+  content: "";
+  background: no-repeat var(--icon-external-link);
+  padding-right: 1em;
+}
+
+aside {
+  width: var(--sidebar-width);
+  padding: 5px 10px 5px 5px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: -webkit-fill-available;
+  background-color: rgb(17, 24, 39);
+}
+
+aside p {
+  margin: 8px;
+}
+
+aside a, .methodItem a {
+  all: unset;
+  cursor: pointer;
+}
+
+aside a:hover, .methodItem a:hover {
+  text-decoration: underline;
+}
+
+.pageContent {
+  width: 100%;
+  max-width: 768px;
+  /* margin-left: calc(auto + var(--sidebar-width)); */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px 0px var(--sidebar-width);
+}
+
+#methods-summary h1 {
+  font-size: 2em;
+}
+
+#methods-summary p {
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+#methods-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  padding: 20px 10px;
+}
+
+.methodItem {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.methodItem .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.methodItem .footer a {
+  color: #a8fdfd;
+}
+
+.methodItem .footer .tags {
+  display: flex;
+  column-gap: 8px;
+}
+
+.methodItem .footer .tags p {
+  margin: 0;
+  font-size: 0.75em;
+  border-radius: 15px;
+  padding: 6px 8px;
+  background-color: #3b3b3b;
+  color: #ddbfe4;
+}
+
+#config {
+  position: fixed;
+  right: 16px;
+  top: 0;
+}
+
+#tags-filter .tags {
+  cursor: pointer;
+}
+
+footer {
+  /* padding: 5px; */
+  /* background-color: #000; */
+  text-align: center;
+  /* margin-left: var(--sidebar-width); */
+
+  /* background-color: rgba(17, 24, 39, 0.5); */
+  width: 100%;
+  max-width: 768px;
+  /* margin-left: calc(auto + var(--sidebar-width)); */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0px 20px var(--sidebar-width);
+}
