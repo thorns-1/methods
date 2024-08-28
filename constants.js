@@ -10,6 +10,7 @@ const TAGS = {
   experimental: "experimental",
   ES1: "ES1",
   initial: "initial",
+  static: "static method",
 }
 
 const methods = [
@@ -134,7 +135,7 @@ const methods = [
     Example: Array.from("foo") => [f, o, o]
     `,
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from",
-    tags: [TAGS.ES6],
+    tags: [TAGS.ES6, TAGS.static],
   },
   {
     key: "fromAsync",
@@ -142,7 +143,7 @@ const methods = [
     description: `Same as .from() but used for async iterators (?)
     `,
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fromAsync",
-    tags: [TAGS.proposal],
+    tags: [TAGS.proposal, TAGS.static],
   },
   {
     key: "forEach",
@@ -190,7 +191,7 @@ const methods = [
     description: `Checks if value is an Array. Example: Array.isArray("foo").
     `,
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray",
-    tags: [TAGS.ES1],
+    tags: [TAGS.ES1, TAGS.static],
   },
   {
     key: "join",
@@ -231,7 +232,7 @@ const methods = [
     description: `Creates an array from given elements. Example: Array.of(1, 2, 3) => [1, 2, 3].
     `,
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of",
-    tags: [TAGS.ES6],
+    tags: [TAGS.ES6, TAGS.static],
   },
   {
     key: "pop",
