@@ -39,7 +39,6 @@ aside {
   flex-direction: column;
   position: fixed;
   height: -webkit-fill-available;
-  background-color: rgb(17, 24, 39);
 }
 
 aside p {
