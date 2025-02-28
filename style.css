@@ -10,6 +10,12 @@ body {
   background-color: rgb(17, 24, 39);
 }
 
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
