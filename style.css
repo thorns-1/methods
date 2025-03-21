@@ -84,6 +84,10 @@ aside a:hover, .methodItem a:hover {
   border-bottom: 1px solid #e5e7eb;
 }
 
+.methodItem p {
+  text-wrap: balance;
+}
+
 .methodItem .footer {
   display: flex;
   justify-content: space-between;
