@@ -1,0 +1,13 @@
+- test mode - blur all method descriptions;
+- light theme (https://lea.verou.me/blog/2021/03/inverted-lightness-variables/, https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme);
+- zoom text;
+- more information
+- count of all methods, groupings\sort\find by name etc.
+- the above todo can be done using queryString (URLSearchParams) - no, it's part of an HTTP protocol
+- find a way to store global values and chage them (closures, useState vanilla js)
+- tags + serach by tags
+- object methods
+- extand to multiple topics
+- add footer
+
+overall i'm really exited (3:13 AM)
